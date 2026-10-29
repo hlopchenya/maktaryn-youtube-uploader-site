@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="Privacy Policy for the Maktaryn YouTube Uploader, a private macOS utility.">
+  <title>Privacy Policy — Maktaryn YouTube Uploader</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="site-header"><a class="brand" href="./" aria-label="Maktaryn YouTube Uploader home"><span class="brand-mark" aria-hidden="true">M</span><span>Maktaryn <span class="brand-light">Uploader</span></span></a><nav aria-label="Main navigation"><a href="./">Home</a><a href="privacy.html" aria-current="page">Privacy</a></nav></header>
+    <main class="policy">
+      <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Privacy Policy</div>
+      <h1>What the uploader accesses, and why.</h1>
+      <p class="policy-lead">Maktaryn YouTube Uploader is a private macOS utility used by its owner to upload and schedule videos for the MAKTARYN and UNSPOK YouTube channels. It is part of Story Studio. This policy covers its YouTube publishing feature and this informational website.</p>
+      <p class="updated">Last updated: 29 October 2026</p>
+
+      <section><h2>Google account and YouTube access</h2><p>The macOS app uses Google OAuth to connect a YouTube channel chosen by the owner. It requests the YouTube upload, read-only, and force-SSL scopes (<code>youtube.upload</code>, <code>youtube.readonly</code>, and <code>youtube.force-ssl</code>). These permissions let it identify the connected channel, upload videos and thumbnails, set video details and publication times, and check the resulting schedule. It does not request a Google password.</p></section>
+      <section><h2>Content handled</h2><p>The app reads files selected or imported by the owner, including finished video files, thumbnails, and text metadata such as titles, descriptions, hashtags, and tags. It sends the selected publishing content to YouTube through Google's APIs. It also receives channel information, upload status, video IDs, and scheduling status from those APIs. The website does not provide an upload form or request access to a Google account.</p></section>
+      <section><h2>Where information is stored</h2><p>The app stores the OAuth refresh token in macOS Keychain on the owner's Mac. It keeps the OAuth client ID, channel information, publishing preferences, local file paths, metadata, schedule, and upload progress in local application data so interrupted work can be resumed. Access tokens are used to make authorized Google API requests; the app has no separate cloud backend for these records. The website's source files contain no OAuth credentials or tokens.</p></section>
+      <section><h2>Sharing and retention</h2><p>The app sends publishing content and the information needed to perform authorized requests directly to Google and YouTube. It does not sell Google user data or use it for advertising. Local publishing records remain on the Mac until the owner removes them or the app's data; disconnecting a channel deletes its locally stored refresh token. Disconnecting or deleting local files does not remove videos already uploaded to YouTube. YouTube handles uploaded content according to the owner's YouTube settings and Google's policies.</p></section>
+      <section><h2>Control and revocation</h2><p>The owner can disconnect a channel in the app to remove its saved refresh token. Access can also be revoked at <a href="https://myaccount.google.com/connections">Google Account connections</a>. After revocation, the app cannot make further authorized requests until the channel is connected again. Videos and schedules already on YouTube must be managed there.</p></section>
+      <section><h2>Website hosting</h2><p>This is a static site hosted on GitHub Pages. Its own code does not set analytics cookies, run advertising scripts, or collect form submissions. GitHub may process technical visitor data to deliver the site; see <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's Privacy Statement</a>.</p></section>
+      <section><h2>Questions and changes</h2><p>For a privacy question, open an issue in the <a href="https://github.com/hlopchenya/maktaryn-youtube-uploader-site/issues/new">project's GitHub Issues</a>. This policy may be updated when the uploader's actual behavior changes; the revision date above will be changed accordingly.</p></section>
+    </main>
+    <footer><span>© 2026 Maktaryn YouTube Uploader</span><span>For the owner's personal use</span><a href="./">Home</a></footer>
+  </div>
+</body>
+</html>
